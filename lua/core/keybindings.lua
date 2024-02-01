@@ -181,6 +181,10 @@ if enabled(group, "autosave") then
 	map("n", "<leader>as", "<CMD>ASToggle<CR>", { desc = "toggle autosave" })
 end
 
+-- liveserver
+map("n", "<leader>lv", "<CMD>LiveServer<CR>", { desc = "start liveserver." })
+map("i", "<C-M-l>", "<CMD>LiveServer<CR>", { desc = "start liveserver" })
+
 -- cmp (these are defined in cmp's configuration file)
 -- ["<C-j>"] = cmp.mapping.scroll_docs(-4),
 -- ["<C-k"] = cmp.mapping.scroll_docs(4),
